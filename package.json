@@ -3,7 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "jest --watchAll=false --coverage"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "*.js",
+      "!cosa.js"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

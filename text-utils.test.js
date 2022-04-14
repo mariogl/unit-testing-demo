@@ -1,14 +1,8 @@
-function firstLetterToUpperCase(text) {
-  if (text === "") {
-    return "";
-  }
-  let firstLetter = text[0];
-  return firstLetter.toUpperCase() + text.slice(1);
-}
-
 // Given: lo que voy a testear
 // When: descripción del escenario de pruebas
 // Then: lo que esperamos que ocurra
+
+const firstLetterToUpperCase = require("./text-utils");
 
 describe("Given a firstLetterToUpperCase function", () => {
   describe("When it receives 'boquerons in vinagre'", () => {
